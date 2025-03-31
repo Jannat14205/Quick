@@ -1,0 +1,338 @@
+/* Mobile */
+@media only screen and (max-width: 665px) and (min-width:320px){
+/* Navbar */
+body p{
+    font-size: 16px;
+}
+    header{
+        top: 0px;
+        padding: 15px 10px;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -18px;
+        background: white;
+    }
+    nav{
+        display: flex;
+        justify-content:space-between ;
+        align-items: center;
+    }
+    nav img{
+        margin-right: 6px ;
+        height: 100%;
+        width: 65px;
+    }
+    
+    nav ul{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        display: flex;
+        gap: 15px;
+    }
+    nav ul li{
+        margin: 0;
+        display: flex;
+    }
+    nav ul li a{
+        margin-left: 2px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 12px;
+        color: #3b506c;
+        transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+    nav ul li a:hover {
+        color: navy;
+        text-decoration: underline;
+    }
+/* Banner Section */
+    .banner{
+        margin-top:0;
+        padding: 50px 10px;
+    }
+    .banner h1{
+        font-size: 30px;
+        color: #3b506c;
+        margin-bottom: 20px;
+    }
+    .banner img{
+        width:100%;
+        margin: 25px auto;
+        display: block;
+    }
+    
+    .banner p{
+        font-size: 15px;
+        color: #3b506c;
+        font-weight: 400;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .banner  h1 span {
+        color: #0c66ff;
+    }
+ /*..............................................................About us*/
+#about {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 100%;
+        margin: auto;
+        padding: 0 20px;
+        flex-direction: column;
+}
+.about-content {
+    flex: 1;
+    padding-right: 15px;
+}
+
+.about-content h2 {
+    font-size: 26px;
+    color: #3b506c;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #3b506c;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+.btn:hover{
+    background-color: #0c66ff;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+ /* Statistics Section */
+    .item {
+        width: 50%;
+        padding: 0 20px ;
+    }
+    
+    .spical{
+        text-align: right;
+    }
+    
+    .item h1{
+        font-size: 20px;
+        color: #3b506c;
+    }
+    .spical h1{
+        font-size: 30px;
+        color: rgb(210, 0, 0);
+    }
+    .item p{
+        border-radius: 100%;
+        font-size: 15px;
+        color: #3b506c;
+    }
+    /*............................................................protfolio */
+.portfolio {
+    background-color: #f9f9f9;
+    padding: 40px 40px;
+    text-align: center;
+}
+
+.portfolio h2 {
+    color: #3b506c;
+    font-size: 36px;
+    margin-bottom: 20px;
+
+
+}
+
+.portfolio-gallery {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-around;
+
+}
+
+.portfolio-item {
+    background: #fff;
+    padding: 20px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.portfolio-item h3 {
+    color: #3b506c;
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    color: #3b506c;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+/* .........................................................call-action */
+.cta {
+    background-color: #8ea3c0;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+  
+.cta .containers {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.containers h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: white;
+}
+  
+.containers p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: white;
+}
+  
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+  
+.cta-btn:hover {
+    background-color: #0c66ff;
+}
+/*......................................................Contact Section */
+.contact {
+    background-color: #8ea3c0;
+    padding: 15px 10px;
+}
+  
+.contact .containers {
+    width: 100%;
+    max-width: 100%;
+    margin: 2px auto;
+    padding: 0 5px;
+    text-align: center;
+}
+  
+h2 {
+        font-size: 30px;
+        color: #3b5060;
+        text-align: center;
+}
+  
+p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+p a{
+    box-sizing: border-box;
+}
+  
+.contact-info {
+    text-align: left;flex-direction: column-reverse;
+    align-items: center;
+}
+  
+.contact-item {
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+  
+.contact-item h3 {
+    font-size: 16px;
+    color: whitesmoke;
+}
+  
+.contact-item p {
+    padding: 10px;
+    line-height: 1.5; 
+    font-size: 17px;
+    color: #777;
+}
+  
+.contact-form input{
+        display: block;
+        width: 100%;
+        height: 40px; /* Adjust height */
+        padding: 10px;
+        box-sizing: border-box;
+}
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+  
+.contact-form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+  
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+/* footer */
+    footer{
+        padding: 15px 10px;
+    }
+    footer h3{
+        font-size: 15px;
+    }
+    .fa-brands {
+        font-size: 25px; 
+        margin: 0 8px;
+    }
+}

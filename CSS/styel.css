@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #3b506c;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+/*................................................................Navbar*/
+header{
+    position: fixed;
+    padding: 20px 50px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    background: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+nav{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+
+nav ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+nav ul li{
+    margin: 0px ;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    color: #3b506c;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+nav ul li a:hover {
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+    background-color:  #0c66ff;
+   text-decoration: double;
+}
+
+/*........................................................Banner Section*/
+.banner{
+    margin-top: 25px;
+    text-align: center;
+    padding: 50px 20px;
+}
+.banner h1{
+    font-size: 60px;
+    color: #3b506c;
+    margin-bottom: 20px;
+}
+.banner img{
+    width:50%;
+    margin: 20px auto;
+    display: block;
+}
+
+.banner p{
+    color: #3b506c;
+    font-weight: 400;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.banner  h1 span {
+    color: #0c66ff;
+}
+/*..............................................................About us*/
+#about {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+.about-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.about-content h2 {
+    font-size: 2.5em;
+    color: #3b506c;
+}
+
+.about-content p {
+    font-size: 1.1em;
+    color: #3b506c;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.btn:hover{
+    background-color: #0c66ff;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+/*...................................................Statistics Section */
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+.item {
+    width: 50%;
+    padding: 0 20px ;
+}
+
+.spical{
+    text-align: right;
+}
+
+.item h1{
+    font-size: 40px;
+    color: #3b506c;
+}
+.spical h1{
+    color: rgb(210, 0, 0);
+}
+.item p{
+    color: #3b506c;
+}
+/*.....................................................Services Section */
+.services-section{
+    padding: 80px 30px;
+    text-align: center;
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.services-item{
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    padding: 20px;
+    margin: 0 10px ;
+    border-radius: 7px;
+    max-width: 300px;
+    text-align: center;
+}
+.services-item h4{
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.services-item img{
+    height: 250px;
+    border-radius: 5px;
+}
+/*............................................................protfolio */
+.portfolio {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.portfolio h2 {
+    color: #3b506c;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.portfolio-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    background: #fff;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.portfolio-item h3 {
+    color: #3b506c;
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    color: #3b506c;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+/*.......................................................Review Section */
+.reviews {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+  
+.reviews .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+  
+.container h2 {
+    font-size: 2.5rem;
+    color: #3b506c;
+    margin-bottom: 30px;
+}
+  
+.review-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+  
+.review-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+  
+.review-card:hover {
+    transform: translateY(-10px);
+}
+  
+.review-text {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+  
+.client-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+  
+.client-job {
+    font-size: 1rem;
+    color: #777;
+}
+/*...........................................Highlight the popular plan */
+.popular {
+    border: 2px solid #007bff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+/*.........................................................Blog Section */
+.blog {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+  
+.blog .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+  
+h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+  
+p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+  
+.blog-posts {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+  
+.blog-post {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+  
+.blog-post:hover {
+    transform: translateY(-10px);
+}
+  
+.blog-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+  
+.blog-post h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 15px;
+}
+  
+.excerpt {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+}
+  
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+  
+.read-more:hover {
+    color: #0056b3;
+}
+/* .........................................................call-action */
+.cta {
+    background-color: #8ea3c0;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+  
+.cta .containers {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.containers h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: white;
+}
+  
+.containers p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: white;
+}
+  
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+  
+.cta-btn:hover {
+    background-color: #0c66ff;
+}
+/*......................................................Contact Section */
+.contact {
+    background-color: #8ea3c0;
+    padding: 15px 10px;
+}
+  
+.contact .containers {
+    max-width: 100%;
+    margin: 2px auto;
+    padding: 0 5px;
+    text-align: center;
+}
+  
+h2 {
+    font-size: 20px;
+    color: #333;
+}
+  
+p {
+    font-size: 20px;
+    color: #555;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+p a{
+    box-sizing: border-box;
+}
+  
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+  
+.contact-item {
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+  
+.contact-item h3 {
+    font-size: 16px;
+    color: #333;
+}
+  
+.contact-item p {
+    font-size: 17px;
+    color: #777;
+}
+  
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+  
+.contact-form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+  
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+/*...............................................................footer */
+footer{
+    background-color: #3b506c;
+    color:white;
+    padding: 30px;
+    text-align: center;
+}
+.fa-brands{
+    font-size: 40px;
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.fa-brands:hover {
+    transform: scale(1.2);
+}
