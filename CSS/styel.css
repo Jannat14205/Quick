@@ -50,6 +50,7 @@ nav ul li{
     display: inline-block;
 }
 nav ul li a{
+    padding: 8px;
     text-decoration: none;
     font-weight: 600;
     font-size: 17px;
